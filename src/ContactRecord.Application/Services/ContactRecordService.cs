@@ -1,4 +1,5 @@
 ﻿using ContactRecord.Application.DTOs;
+using ContactRecord.Application.Exceptions;
 using ContactRecord.Application.Interfaces;
 using ContactRecord.Core.Entities;
 using System;
@@ -43,7 +44,7 @@ namespace ContactRecord.Application.Services
 
             //TO-DO: Create own Exception
             if (existContactRecord != null)
-                throw new Exception("ContactRecord alerady exists");
+                throw new ContactRecordExistsException("ContactRecord alerady exists");
 
             //TO-DO: Use Automapper
             var address = new Core.ValueObjects.Address(input.Address.State, input.Address.City, input.Address.ZipCode, input.Address.Street, input.Address.Number);
@@ -61,7 +62,7 @@ namespace ContactRecord.Application.Services
 
             //TO-DO: Create own Exception
             if (contactRecordToUpdate == null)
-                throw new Exception("ContactRecord doesn't exists");
+                throw new ContactRecordNotFoundException("ContactRecord doesn't exists");
 
             //TO-DO: Use Automapper
             var address = new Core.ValueObjects.Address(input.Address.State, input.Address.City, input.Address.ZipCode, input.Address.Street, input.Address.Number);
@@ -86,7 +87,7 @@ namespace ContactRecord.Application.Services
 
             //TO-DO: Create own Exception
             if (contactRecordToDelete == null)
-                throw new Exception("ContactRecord doesn't exists");
+                throw new ContactRecordNotFoundException("ContactRecord doesn't exists");
 
             _contactRecordRepository.Delete(contactRecordToDelete);
 

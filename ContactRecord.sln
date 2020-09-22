@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactRecord.Host", "src\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactRecord.Application", "src\ContactRecord.Application\ContactRecord.Application.csproj", "{F98CAD76-DF95-4475-B650-7D7AFF73880E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "test\UnitTest\UnitTest.csproj", "{9522489D-F404-4A0F-843A-B73C90526BA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "test\UnitTest\UnitTest.csproj", "{9522489D-F404-4A0F-843A-B73C90526BA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalTest", "test\FunctionalTest\FunctionalTest.csproj", "{178E0337-DD14-4B2D-B132-58B32C593F63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{9522489D-F404-4A0F-843A-B73C90526BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9522489D-F404-4A0F-843A-B73C90526BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9522489D-F404-4A0F-843A-B73C90526BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{178E0337-DD14-4B2D-B132-58B32C593F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178E0337-DD14-4B2D-B132-58B32C593F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{178E0337-DD14-4B2D-B132-58B32C593F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{178E0337-DD14-4B2D-B132-58B32C593F63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{BFB03FCC-2E11-4397-8690-1AD004E1EED3} = {8B767A7C-1186-40AB-96B4-C43806A78413}
 		{F98CAD76-DF95-4475-B650-7D7AFF73880E} = {8B767A7C-1186-40AB-96B4-C43806A78413}
 		{9522489D-F404-4A0F-843A-B73C90526BA6} = {9D6E0419-2C16-4F9F-8DD7-2E199B07F269}
+		{178E0337-DD14-4B2D-B132-58B32C593F63} = {9D6E0419-2C16-4F9F-8DD7-2E199B07F269}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {735AECC7-D971-4C8C-8C54-9F788799DD98}

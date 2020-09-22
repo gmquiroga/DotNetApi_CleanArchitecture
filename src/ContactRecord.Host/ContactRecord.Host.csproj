@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ContactRecord.Api\ContactRecord.Api.csproj" />
+    <ProjectReference Include="..\ContactRecord.Application\ContactRecord.Application.csproj" />
     <ProjectReference Include="..\ContactRecord.Core\ContactRecord.Core.csproj" />
     <ProjectReference Include="..\ContactRecord.Infrastructure\ContactRecord.Infrastructure.csproj" />
   </ItemGroup>
