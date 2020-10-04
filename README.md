@@ -1,0 +1,4 @@
+- Set ContactRecord.Host as Start Up Proyects.
+- Configure Connection String named ContactRecordConnection in ContactRecord\src\ContactRecord.Host\appsettings to your local SQL Server.
+- In Package Manage Console -> Select src\ContactRecord.Infrastructure -> type Update-Database to create de Database.
+- Run in IIS Express you will see the documentacion of api from swagger.
